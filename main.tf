@@ -8,10 +8,7 @@ terraform {
   }
 }
 
-provider "render" {
-  api_key  = var.RENDER_API_KEY
-  owner_id = var.RENDER_OWNER_ID
-}
+provider "render" {}
 
 resource "render_static_site" "example" {
   name          = "render-terraform-example-try6"

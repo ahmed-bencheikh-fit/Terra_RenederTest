@@ -9,8 +9,8 @@ terraform {
 }
 
 provider "render" {
-  api_key  = "rnd_uR2AgpFmzqm3byElqB1rDIJ4y67B"
-  owner_id = "tea-d51ruc3uibrs739grtj0"
+  RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
+  RENDER_OWNER_ID: ${{ secrets.RENDER_OWNER_ID }}
 }
 
 resource "render_static_site" "example" {
